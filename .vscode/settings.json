@@ -1,0 +1,29 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.import.exclusions": [
+        "**/node_modules/**",
+        "**/.gradle/**",
+        "**/dist/**",
+        "**/.expo/**"
+    ],
+    "java.project.resourceFilters": [
+        "node_modules",
+        ".git",
+        ".gradle",
+        "dist",
+        ".expo"
+    ],
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.gradle/**": true,
+        "**/dist/**": true,
+        "**/.expo/**": true
+    },
+    "search.exclude": {
+        "**/node_modules/**": true,
+        "**/.gradle/**": true,
+        "**/dist/**": true,
+        "**/.expo/**": true
+    }
+}

@@ -4,27 +4,59 @@
     "slug": "WorkoutTracker",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logo.jpeg",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/logo.jpeg",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
     },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000",
+          "image": "./assets/logo.jpeg",
+          "imageWidth": 1024,
+          "resizeMode": "cover"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "defaultChannel": "workout-reminders",
+          "color": "#E53935"
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anishkharat.workouttracker",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#0A0A0A",
+        "foregroundImage": "./assets/logo.jpeg"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.WorkoutTracker"
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#0A0A0A",
+      "barStyle": "light-content",
+      "enforceContrast": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75965d22-9c73-4f1d-b0fe-66e082b6c64d"
+      }
     }
   }
 }
