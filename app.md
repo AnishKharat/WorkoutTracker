@@ -14,7 +14,7 @@ A **React Native** mobile workout tracker app for personal use. Dark, aggressive
 - **Text Muted:** `#888888`
 - **Success / Active:** `#4CAF50` (green, for streak days)
 - **Font Style:** Bold, modern — something like *Inter* or *Rajdhani*
-
+ am anish kharat
 ---
 
 ## 📱 Screens & Features
